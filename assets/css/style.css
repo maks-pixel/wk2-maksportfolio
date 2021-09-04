@@ -111,7 +111,10 @@ img {
     margin-top: 0;
 }
 
-.main-proj{  
+.main-proj{
+    background-image: url('../images/runbuddy-thumb.jpg');  
+    background-size: cover;
+    background-position: center;
     padding: 50px;
     transition: transform .2s;
     width:80%;
@@ -120,7 +123,7 @@ img {
     border:solid 4px var(--sand-yellow);
 }
 
-.mini-proj {
+.mini {
     padding: 50px;
     transition: transform .2s;
     width: 200px;
@@ -129,8 +132,17 @@ img {
     border:solid 4px var(--sand-yellow);
 }
 
+.mini-h{
+    background-image: url('../images/horiseon.jpg');  
+    background-size: cover;
+}
 
-article {
+.mini:hover,
+.main-proj:hover{
+    transform: scale(1.1);
+}
+
+.mini-proj{
     display: flex;
     flex-direction: row;
     justify-content: center;
