@@ -14,6 +14,7 @@
 body {
     Background-color: var(--off-white);
     color:var(--dark);
+    margin:0;
 }
 /*css header styling*/
 header {
@@ -87,7 +88,7 @@ img {
     align-items: center;
     margin: 8.5%;
     width:50%;
-    height:60%;
+    height:100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -102,4 +103,35 @@ img {
     border-radius: 15px;
 }
 
+/*projects section*/
+.projects {
+    display:flex;
+    flex-direction: column;
+    background: var(--forest);
+    margin-top: 0;
+}
 
+.main-proj{  
+    padding: 50px;
+    transition: transform .2s;
+    width:80%;
+    height:350px;
+    margin: 0 auto;
+    border:solid 4px var(--sand-yellow);
+}
+
+.mini-proj {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 5px 20px;
+    border:solid 4px var(--sand-yellow);
+}
+
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
