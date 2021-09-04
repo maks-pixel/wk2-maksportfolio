@@ -27,10 +27,12 @@ header {
 
 header h1 {
     font-weight: bold;
-
-    font-size: 36px;
+    text-shadow: 0 0 10px rgba(226, 216, 215, 0.5);
+    font-size: 38px;
     color:var(--dark);
 }
+
+/* Navigation links styling*/
 header a {
     margin: 20px 15px;
     text-decoration: none;
@@ -61,6 +63,7 @@ header nav ul li a:hover{
     border-radius: 15px;
 }
 
+/*about me section styling*/
 .about-me {
     background-image: url('../images/aboutme.jpg');
     background-size: cover;
@@ -76,18 +79,19 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+   
 }
 
 img {
     display:flex;
     align-items: center;
     margin: 8.5%;
-    padding:10px 60px 10px 60px;
-    width:60%;
-    height:70%;
+    width:50%;
+    height:60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.bio{
 
+.bio{
     background-color:var(--off-pink);
     padding: 20px;
     margin: 3.5%; 
@@ -97,3 +101,5 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
+
+
