@@ -83,13 +83,14 @@ header nav ul li a:hover{
    
 }
 
-img {
+.maks {
     display:flex;
     align-items: center;
     margin: 8.5%;
-    width:50%;
-    height:100%;
+    width:90%;
+    height:50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 
 .bio{
@@ -107,8 +108,9 @@ img {
 .projects {
     display:flex;
     flex-direction: column;
-    background: var(--forest);
+    background: var(--soft-green);
     margin-top: 0;
+    border:solid 4px var(--forest);
 }
 
 .main-proj{
@@ -119,8 +121,10 @@ img {
     transition: transform .2s;
     width:80%;
     height:350px;
-    margin: 0 auto;
-    border:solid 4px var(--sand-yellow);
+    margin: 5px auto;
+    border:solid 4px var(--forest);
+    border-radius: 15px;
+    opacity: 0.7;
 }
 
 .mini {
@@ -129,21 +133,37 @@ img {
     width: 200px;
     height: 200px;
     margin: 5px 20px;
-    border:solid 4px var(--sand-yellow);
+    border:solid 4px var(--forest);
+    border-radius: 15px;
+    opacity: 0.5;
 }
 
 .mini-h{
     background-image: url('../images/horiseon.jpg');  
     background-size: cover;
 }
+.mini-m{
+    background-image: url('../images/box.jpg');  
+    background-size: cover;
+    background-position: center;
+}
 
 .mini:hover,
 .main-proj:hover{
     transform: scale(1.1);
+    opacity: 1;
 }
 
 .mini-proj{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.projects h2{
+    color: var(--off-pink);
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(51, 66, 47, 0.5);
+
 }
