@@ -1,5 +1,4 @@
 # wk2-maksportfolio
-# wk1-horiseon
 
 ## Purpose
 To create my own profile site that is deployed with my projects
