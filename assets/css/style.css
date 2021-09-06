@@ -1,6 +1,5 @@
 :root {
-    --off-pink: #e2d8d7;
-    --off-white: #EEEEF0;
+    --off-pink: #e2d8d7;  
     --forest: #33422F;
     --dark: #011a00;
     --soft-green: #869069;
@@ -12,7 +11,6 @@
     box-sizing: border-box;
 }
 body {
-    Background-color: var(--off-white);
     color:var(--dark);
     margin:0;
 }
@@ -21,12 +19,18 @@ header {
     padding:20px 30px;
     background-color: var(--soft-green);
     position: sticky;
+    top:0;
     position: -webkit-sticky;
     display: flex;
+    flex-wrap: wrap;
+    width:100%;
     justify-content: space-between;
+    z-index: 9999;
+    border:solid 4px var(--forest);
 }
 
-header h1 {
+header h1,
+footer h3 {
     font-weight: bold;
     text-shadow: 0 0 10px rgba(226, 216, 215, 0.5);
     font-size: 38px;
@@ -64,23 +68,24 @@ header nav ul li a:hover{
     border-radius: 15px;
 }
 
-/*about me section styling*/
-.about-me {
+/*about me and contactsection styling*/
+.about-me,
+.contact {
     background-image: url('../images/aboutme.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .image {
-    max-width: 50%;
+    width: 50%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-   
 }
 
 .maks {
@@ -93,21 +98,24 @@ header nav ul li a:hover{
     border-radius: 15px;
 }
 
-.bio{
+.bio,
+.contact-info{
     background-color:var(--off-pink);
     padding: 20px;
     margin: 3.5%; 
     color: var(--dark);
     border: solid 3px var(--soft-green);
-    max-width: 50%; 
+    width: 35%; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
+    flex-wrap: wrap;
 }
 
 /*projects section*/
 .projects {
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background: var(--soft-green);
     margin-top: 0;
     border:solid 4px var(--forest);
@@ -136,14 +144,21 @@ header nav ul li a:hover{
     border:solid 4px var(--forest);
     border-radius: 15px;
     opacity: 0.5;
+    flex-wrap: wrap;
 }
 
 .mini-h{
     background-image: url('../images/horiseon.jpg');  
     background-size: cover;
 }
-.mini-m{
+.mini-b{
     background-image: url('../images/box.jpg');  
+    background-size: cover;
+    background-position: center;
+}
+
+.mini-t{
+    background-image: url('../images/toronto.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -158,6 +173,7 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .projects h2{
@@ -165,5 +181,85 @@ header nav ul li a:hover{
     font-size: 36px;
     text-align: center;
     text-shadow: 0 0 10px rgba(51, 66, 47, 0.5);
+}
+h4{
+    color: var(--dark);
+    text-align: center;
+    opacity: 1;
+    font-size: 30px;
+}
 
+/*contact me section style only*/
+.contact-info h3{
+    font-size: 36px;
+}
+.contact-info{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+footer{
+    bottom: 0;
+    padding:20px 30px;
+    background-color: var(--soft-green);
+    display: flex;
+    justify-content: center;
+    border:solid 4px var(--forest);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    header nav ul {
+        
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer{
+        text-align: center;
+        width: 100%;
+    }
+
+    .image,
+    .bio{
+        width: 100%;
+    }
+
+    .bio{
+        text-align: center;
+    }
+
+    
+   .mini-proj{
+       width: 100%;
+       align-items: center;
+   }
+    
 }
