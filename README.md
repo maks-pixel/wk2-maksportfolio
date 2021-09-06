@@ -14,5 +14,5 @@ to open [index.html](index.html) file to view the code
 
 to open the screenshot here is the link [screenshot.png](assets/images/screenshot.png)
 
-![screenshot.png](https://github.com/maks-pixel/wk2-maksportfolio/blob/main/screenshot.png?raw=true)
+![Screenshot](assets/images/screenshot.png)
 
