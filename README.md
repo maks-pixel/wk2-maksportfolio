@@ -16,3 +16,4 @@ to open the screenshot here is the link [screenshot.png](assets/images/screensho
 
 ![screenshot.png](https://github.com/maks-pixel/wk2-maksportfolio/blob/main/screenshot.png?raw=true)
 
+![Screenshot](assets/images/screenshot.png)
