@@ -122,7 +122,7 @@ header nav ul li a:hover{
 }
 
 .main-proj{
-    background-image: url('../images/pantry-remover.png');  
+    background-image: url('../images/Surveyorama\ .jpg');  
     background-size: cover;
     background-position: center;
     padding: 50px;
@@ -149,6 +149,10 @@ header nav ul li a:hover{
 
 .mini-h{
     background-image: url('../images/horiseon.jpg');  
+    background-size: cover;
+}
+.mini-a{
+    background-image: url('../images/pantry-remover.png');  
     background-size: cover;
 }
 .mini-b{
